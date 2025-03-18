@@ -1,0 +1,372 @@
+*{
+    margin:0; padding: 0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 60.5%;
+    font-style: italic;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background: white;
+    padding:0.2rem 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo {
+    font-weight: bolder;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropbtn {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: burlywood;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: black;
+}
+
+header .navbar a:hover {
+    color: burlywood;
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: black;
+    margin-left: 1.5rem;
+}
+
+
+header .icons a:hover{
+    color: burlywood;
+}
+
+.menu-icon {
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+}    
+
+.navbar {
+     position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background: white;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    padding-top: 80px;
+    transition: right 0.3s ease-in-out;
+}
+
+.navbar a {
+    font-size: 2rem;
+    padding: 15px;
+    display: block;
+}
+
+.navbar.show {
+    right: 0;
+    }
+}
+
+.hero {
+    position: relative;
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.contact {
+    background: url('contact.jpg') no-repeat center;
+    background-size: cover;
+    height: 330px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 6rem;
+    margin-top: -130px;
+    color: white;
+    -webkit-text-stroke: 1px whitesmoke;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    place-items: center;
+}
+
+.contact-card h3{
+    text-align: center;
+}
+
+.contact-card a {
+    text-align: center;
+    font-size: 13px;
+    color: #3b1f1e;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-card img {
+    width: 40px;
+}
+
+
+.contact-card h3 {
+    margin: 10px 0 5px;
+    font-size: 15px;
+}
+
+.contact-form {
+    width: 40%;
+    text-align: left;
+}
+
+.contact-form button{
+    font-size: 18px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4a2c2a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #3b1f1e;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info, .contact-form {
+        width: 80%;
+    }
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4a2c2a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #3b1f1e;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info, .contact-form {
+        width: 80%;
+    }
+}
+
+footer {
+    background:#dea974;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.social-media p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.social-media a img {
+    width: 30px; 
+    margin: 0 5px;
+}
+
+.apply-now {
+    text-align: center;
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.apply-btn {
+    display: inline-block;
+    background-color: rgba(245, 245, 245, 0.447);
+    color: black;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.apply-btn:hover {
+    background-color: goldenrod;
+}
+
+.footer-links {
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-links a:hover {
+    color: goldenrod;
+}
