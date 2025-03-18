@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Crème De La Crust</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Architects+Daughter&family=Charm:wght@400;700&display=swap" rel="stylesheet">
+   
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="contact-us_styles.css">
+</head>
+<body>
+
+<header>
+    <a href="#"><img src="logo.png" alt="Company Logo"></a>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <div class="dropdown">
+            <a href="products.html" class="dropbtn">Products &#9662;</a>
+            <div class="dropdown-content">
+                <a href="cakes.html">Cakes</a>
+                <a href="pastries.html">Pastries</a>
+                <a href="breads.html">Breads</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="contact-us.html">Custom Order</a>
+            </div>
+        </div>    
+        <a href="shop-by-occasion.html">Shop by Occasion</a>
+        <a href="contact-us.html">Contact Us</a>
+    </nav>
+    <div class="icons">
+        <a href="user.html" class="fas fa-user"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+    </div>    
+</header>
+
+<section class="hero">
+    <div class="contact"></div>
+    <h1>Contact Us</h1>
+</section>
+
+<section class="contact-container">
+    <div class="contact-info">
+        <div class="contact-card">
+            <img src="phone.icon.jpg" alt="Phone">
+            <h3>Phone</h3>
+            <a href="tel:+18684559678">+1 (868) 455-9678</a>
+        </div>
+        <div class="contact-card">
+            <img src="whatsapp.icon.png" alt="WhatsApp">
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/18684559678" target="_blank">Chat with us </a>
+        </div>
+        <div class="contact-card">
+            <img src="mail.icon.png" alt="Email">
+            <h3>Email</h3>
+            <a href="mailto:CremedelaCrust@gmail.com">Send us an email</a>
+        </div>
+        <div class="contact-card">
+            <img src="location.icon.png" alt="Location">
+            <h3>Location</h3>
+            <a href="https://www.google.com/maps?p=Avenue, Tragarete Road, Independence Square" target="_blank">Visit our location</a>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="social-media">
+            <p>FOLLOW CRÈME DE LA CRUST</p>
+            <a href="https://www.facebook.com/"><img src="facebook-icon.jpg" alt="Facebook"></a>
+            <a href="https://x.com/?lang=en"><img src="twitter-icon.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img src="instagram-icon.jpg" alt="Instagram"></a>
+        </div>
+        <div class="apply-now">
+            <p>Your next great opportunity starts here!<br>
+            Apply now and explore opportunities with us.</p>
+            <a href="apply.html" class="apply-btn">Apply Now</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">FAQ</a>
+            <a href="#">Help</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.querySelector(".navbar").classList.toggle("show");
+    }
+</script>
+
+<script>
+    function toggleMenu() {
+        document.querySelector(".navbar").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>
