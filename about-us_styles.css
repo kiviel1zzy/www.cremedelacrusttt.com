@@ -1,0 +1,377 @@
+*{
+    margin:0; padding: 0;
+    box-sizing:border-box;
+    font-family:'Times New Romain', Times, serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 60.5%;
+    font-style: italic;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background: white;
+    padding:0.2rem 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header. logo {
+    font-weight: bolder;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropbtn {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: burlywood;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: black;
+}
+
+header .navbar a:hover {
+    color: burlywood;
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: black;
+    margin-left: 1.5rem;
+}
+
+
+header .icons a:hover{
+    color: burlywood;
+}
+
+.menu-icon {
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 250px;
+        background: white;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        padding-top: 80px;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .navbar a {
+        font-size: 2rem;
+        padding: 15px;
+        display: block;
+    }
+
+    .navbar.show {
+        right: 0;
+    }
+}
+
+
+.hero {
+    position: relative;
+    width: 100vw; 
+    height: 70vh; 
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Aboreto', sans-serif;
+    font-weight: bolder;
+    font-size: 7em;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.441);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.about-content {
+    font-family:'Charm', cursive;
+    font-weight: bolder;
+    font-size: 2.8em;
+    text-align: center;
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px;
+    background-color: #dea974;
+    line-height: 1.8;
+    color:beige;
+    outline-color: black;
+}
+
+.team-section {
+    text-align: center;
+    background: url('background\ .jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 20px;
+    position: relative;
+    color: #4a2c2a;
+}
+
+.team-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+}
+
+.team-section h2,
+.team-leader,
+.team-members {
+    position: relative;
+    z-index: 2;
+}
+
+.team-section h2 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #5a3c38;
+}
+
+.team-leader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.team-leader img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #5a3c38;
+}
+
+.team-leader p {
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.team-members {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 1000px; 
+    margin: auto; 
+    text-align: center;
+}
+
+.team-member {
+    flex: 1 1 calc(25% - 20px);
+    max-width: 200px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.team-member p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+footer {
+    background:#dea974;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.social-media p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.social-media a img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+.apply-now {
+    text-align: center;
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.apply-btn {
+    display: inline-block;
+    background-color: rgba(245, 245, 245, 0.447);
+    color: black;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.apply-btn:hover {
+    background-color: goldenrod;
+}
+
+.footer-links {
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-links a:hover {
+    color: goldenrod;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 3%;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-text {
+        font-size: 3rem;
+        padding: 8px 15px;
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    .hero-text {
+        font-size: 2.5rem;
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    .apply-btn {
+        font-size: 1.4rem;
+        padding: 8px 12px;
+    }
+}
