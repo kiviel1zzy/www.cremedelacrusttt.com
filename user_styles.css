@@ -1,0 +1,404 @@
+*{
+    margin:0; padding: 0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 60.5%;
+    font-style: italic;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background: white;
+    padding:0.2rem 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header. logo {
+    font-weight: bolder;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropbtn {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: burlywood;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: black;
+}
+
+header .navbar a:hover {
+    color: burlywood;
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: black;
+    margin-left: 1.5rem;
+}
+
+
+header .icons a:hover{
+    color: burlywood;
+}
+
+.menu-icon {
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 250px;
+        background: white;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        padding-top: 80px;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .navbar a {
+        font-size: 2rem;
+        padding: 15px;
+        display: block;
+    }
+
+    .navbar.show {
+        right: 0;
+    }
+}
+
+.signup-container {
+    max-width: 400px;
+    width: 90%;
+    margin: 120px auto 20px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-container h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.signup-container p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.login-link {
+    color: #c87f5d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    font-size: 1.4rem;
+    text-align: left;
+    width: 100%;
+}
+
+input {
+    width: 90%;
+    max-width: 350px;
+    padding: 12px;
+    margin: 8px 0;
+    border-bottom: 2px solid black;
+    background: none;
+    font-size: 1.6rem;
+    outline: none;
+    display: block;
+}
+
+.signup-container {
+    max-width: 600px; 
+    width: 90%;
+    margin: 150px auto 30px; 
+    padding: 40px; 
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.signup-container h2 {
+    font-size: 3.5rem; 
+    margin-bottom: 15px;
+}
+
+.signup-container p {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    font-size: 1.6rem; 
+    text-align: left;
+    width: 90%;
+    font-weight: bold;
+}
+
+input {
+    width: 90%;
+    max-width: 500px; 
+    padding: 14px;
+    margin: 10px 0;
+    border-bottom: 2px solid black;
+    background: none;
+    font-size: 1.8rem; 
+    outline: none;
+    display: block;
+}
+
+.signup-btn {
+    background-color: #c87f5d;
+    color: white;
+    padding: 14px;
+    width: 90%;
+    max-width: 500px; 
+    font-size: 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.signup-btn:hover {
+    background-color: #a96a4a;
+}
+
+.continue-with {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin: 30px 0;
+}
+
+.continue-with span {
+    background: white; 
+    padding: 0 10px;
+    z-index: 1;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.continue-with::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: black;
+    top: 50%;
+    left: 10%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social-icons a img {
+    width: 50px; 
+    height: 50px;
+}
+
+footer {
+    background:#dea974;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.social-media p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.social-media a img {
+    width: 30px; 
+    margin: 0 5px;
+}
+
+.apply-now {
+    text-align: center;
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.apply-btn {
+    display: inline-block;
+    background-color: rgba(245, 245, 245, 0.447);
+    color: black;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.apply-btn:hover {
+    background-color: goldenrod;
+}
+
+.footer-links {
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-links a:hover {
+    color: goldenrod;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 3%;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-text {
+        font-size: 3rem;
+        padding: 8px 15px;
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    .hero-text {
+        font-size: 2.5rem;
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    .apply-btn {
+        font-size: 1.4rem;
+        padding: 8px 12px;
+    }
+}
