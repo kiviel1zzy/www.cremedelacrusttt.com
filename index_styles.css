@@ -303,7 +303,7 @@ html {
     }
 
     .home p {
-        font-size: 2rem; /* Reduce font size for better fit */
+        font-size: 2rem; 
         padding: 8px 10px;
     }
 }
@@ -314,13 +314,13 @@ html {
     }
 
     .home p {
-        font-size: 1.6rem; /* Adjust for smaller screens */
+        font-size: 1.6rem; 
         padding: 6px 8px;
     }
 }
 @media (max-width: 768px) {
     .btn {
-        width: 180px; /* Slightly smaller */
+        width: 180px; 
         height: 55px;
         font-size: 16px;
         margin-top: 15px;
