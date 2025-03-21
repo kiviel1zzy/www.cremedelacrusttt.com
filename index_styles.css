@@ -148,7 +148,7 @@ header .icons a:hover {
 }    
 
 .home p {
-    margin-top: 270px;
+    margin-top: 200px;
     font-family: Charm;
     font-weight: bold;
     font-size: 4rem;
@@ -159,6 +159,7 @@ header .icons a:hover {
     max-width: 90%; 
     word-wrap: break-word; 
     white-space: normal; 
+    margin: 140px auto 20px;
 }
 
 html {
