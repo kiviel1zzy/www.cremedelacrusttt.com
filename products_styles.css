@@ -167,12 +167,13 @@ header .icons a:hover {
     font-size: 4.5em;
     font-weight: bold;
     color: #000;
+    padding-top: 45px;
 }
 
 .hero-text p {
     font-style: italic;
     color: #333;
-    font-size: 3em;
+    font-size: 5em;
 }
 
 .products {
@@ -289,7 +290,7 @@ footer {
 
 
 header {
-    padding: 1rem 3%;
+        padding: 1rem 3%;
 }
 
 .hero-text {
@@ -310,7 +311,7 @@ header {
 }
 
 @media (max-width: 768px) {
-    .hero-text p {
+.hero-text p {
     font-size: 2rem;
     padding: 15px;
     max-width: 90%; 
@@ -320,11 +321,11 @@ header {
 }
 
 @media (max-width: 480px) {
-    .hero-text p {
-    font-size: 1.4rem; 
-    padding: 12px;
-    max-width: 100%;
-    word-wrap: break-word;
+.hero-text p {
+font-size: 1.4rem; 
+padding: 12px;
+max-width: 100%;
+word-wrap: break-word;
     }
 }
 
