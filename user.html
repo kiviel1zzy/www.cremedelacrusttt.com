@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User - Crème De La Crust</title>
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Architects+Daughter&family=Charm:wght@400;700&display=swap" rel="stylesheet">
-   
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <link rel="stylesheet" href="user_styles.css">
 </head>
 <body>
@@ -31,7 +27,7 @@
                 <a href="pastries.html">Pastries</a>
                 <a href="breads.html">Breads</a>
                 <a href="cookies.html">Cookies</a>
-                <a href="custom-oreder.html">Custom Order</a>
+                <a href="custom-order.html">Custom Order</a>
             </div>
         </div>    
         <a href="shop-by-occasion.html">Shop by Occasion</a>
@@ -47,12 +43,14 @@
     <h2>Sign Up</h2>
     <p>Already a member? <a href="login.html" class="login-link">Log in</a></p>
 
-    <form action="#" method="POST">
+    <form id="signup-form" action="#" method="POST" onsubmit="return validateForm()">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
+        <small id="email-error" class="error-message"></small>
 
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
+        <small id="password-error" class="error-message"></small>
 
         <button type="submit" class="signup-btn">Sign Up</button>
     </form>
@@ -103,3 +101,4 @@
 
 </body>
 </html>
+
