@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (!valid) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault(); 
         }
     });
 
