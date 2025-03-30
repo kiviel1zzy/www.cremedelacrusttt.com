@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
             valid = false;
         }
 
-        // Password validation (Minimum 6 characters, at least 1 number and 1 special character)
         if (!validatePassword(password)) {
             alert("Password must be at least 6 characters long and include at least one number and one special character.");
             valid = false;
